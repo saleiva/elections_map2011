@@ -1,0 +1,117 @@
+.overlay{
+	position:absolute;
+	top: 70px;
+	z-index: 100;
+}
+
+.overlay.left{
+	width: 360px;
+	left: 100px;
+	background: url('images/hline.png') 0 97px no-repeat;
+}
+
+.overlay .title h1{
+	font-size: 51px;
+	color:#333;
+	font-weight: bold;
+	letter-spacing: -1px;
+	line-height: 51px;
+	margin: 0 0 0 4px;
+}
+
+.overlay .numbers_container{
+	padding: 20px 0 15px 0;
+	float: left;
+}
+
+.overlay .numbers_container ul{
+	display: block;
+}
+
+.overlay .numbers_container ul li{
+	display: inline;
+	list-style-type: none;
+	padding-right: 7px;
+	float:left;
+}
+
+.overlay .numbers_container ul li div.number{
+	width: 107px;
+	height: 117px;
+	text-align: center;
+}
+
+.overlay .numbers_container ul li div.number span.big{
+	font-family: Helvetica, Arial, sans-serif;
+	color: #FFF;
+	font-size: 57px;
+	font-weight: bold;
+	display:block;
+	padding: 15px 0 15px 0;
+}
+
+.overlay .numbers_container ul li div.number span.name{
+	font-family: Helvetica, Arial, sans-serif;
+	color: #FFF;
+	font-size: 13px;
+	font-weight: bold;
+}
+
+.overlay .numbers_container ul li div.number.blue{
+	background: url('images/blue_box.png') 0 0 no-repeat;
+}
+
+.overlay .numbers_container ul li div.number.red{
+	background: url('images/red_box.png') 0 0 no-repeat;
+}
+
+.overlay .numbers_container ul li div.number.green{
+	background: url('images/green_box.png') 0 0 no-repeat;
+}
+
+.overlay .text{
+	display: block;
+}
+
+.overlay .text p{
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 15px;
+	color: #333;
+	width: 320px;
+	line-height: 20px;
+	margin: 0 0 0 4px;	
+	display: block;	
+}
+
+.overlay .text p a{
+	color: #000;
+}
+
+.overlay.right{
+	width: 360px;
+	right: 100px;
+	background: url('images/hline.png') 0 97px no-repeat;
+	padding: 10px 0 0 0;
+}
+
+.overlay.right ul li{
+	display: inline;
+	list-style-type: none;
+	padding-left: 5px;
+	float:right;
+}
+
+.overlay.right ul li a{
+	background: url('images/button.png') 0 0 no-repeat;
+	padding: 17px 38px 12px 38px;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 15px;
+	color: #FFF;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.overlay.right ul li a:hover{
+	background: url('images/button.png') 0 -52px no-repeat;
+	color: #000;	
+}

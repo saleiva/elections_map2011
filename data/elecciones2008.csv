@@ -1,0 +1,73 @@
+upo - id,upo - ts,upo - tipo,upo - id_ca,upo - nombre,upo - nombre_ca,upo - codigo_color,upo - nombre_partido,upo - porciento_escrutado
+0,0,1,,Total España,,i,PSOE,99.99
+1,0,2,,Andalucía,,i,PSOE,100
+2,0,2,,Aragón,,i,PSOE,100
+3,0,2,,Asturias,,i,PSOE,100
+4,0,2,,Baleares,,i,PSOE,100
+5,0,2,,Canarias,,i,PSOE,100
+6,0,2,,Cantabria,,d,PP,100
+7,0,2,,Castilla La Mancha,,d,PP,100
+8,0,2,,Castilla y León,,d,PP,100
+9,0,2,,Cataluña,,i,PSC-PSOE,100
+10,0,2,,Extremadura,,i,PSOE,100
+11,0,2,,Galicia,,d,PP,99.97
+12,0,2,,Madrid,,d,PP,100
+13,0,2,,Navarra,,o,UPN-PP,100
+14,0,2,,País Vasco,,i,PSE-EE (PSOE),100
+15,0,2,,Murcia,,d,PP,100
+16,0,2,,La Rioja,,d,PP,100
+17,0,2,,C. Valenciana,,d,PP,100
+18,0,2,,Ceuta,,d,PP,100
+19,0,2,,Melilla,,d,PP,100
+4,0,3,1,Almería,Andalucía,d,PP,100
+11,0,3,1,Cádiz,Andalucía,i,PSOE,100
+14,0,3,1,Córdoba,Andalucía,i,PSOE,100
+18,0,3,1,Granada,Andalucía,i,PSOE,100
+21,0,3,1,Huelva,Andalucía,i,PSOE,100
+23,0,3,1,Jaén,Andalucía,i,PSOE-A,100
+29,0,3,1,Málaga,Andalucía,i,PSOE-A,100
+41,0,3,1,Sevilla,Andalucía,i,PSOE,100
+22,0,3,2,Huesca,Aragón,i,PSOE,100
+44,0,3,2,Teruel,Aragón,i,PSOE,100
+50,0,3,2,Zaragoza,Aragón,i,PSOE,100
+33,0,3,3,Asturias,Asturias,i,PSOE,100
+7,0,3,4,Illes Balears,Baleares,i,PSOE,100
+35,0,3,5,Las Palmas,Canarias,i,PSOE,100
+38,0,3,5,Santa Cruz de Tenerife,Canarias,i,PSOE,100
+39,0,3,6,Cantabria,Cantabria,d,PP,100
+2,0,3,7,Albacete,Castilla La Mancha,d,PP,100
+13,0,3,7,Ciudad Real,Castilla La Mancha,d,PP,100
+16,0,3,7,Cuenca,Castilla La Mancha,d,PP,100
+19,0,3,7,Guadalajara,Castilla La Mancha,d,PP,100
+45,0,3,7,Toledo,Castilla La Mancha,d,PP,100
+5,0,3,8,Avila,Castilla y León,d,PP,100
+9,0,3,8,Burgos,Castilla y León,d,PP,100
+24,0,3,8,León,Castilla y León,i,PSOE,100
+34,0,3,8,Palencia,Castilla y León,d,PP,100
+37,0,3,8,Salamanca,Castilla y León,d,PP,100
+40,0,3,8,Segovia,Castilla y León,d,PP,100
+42,0,3,8,Soria,Castilla y León,d,PP,100
+47,0,3,8,Valladolid,Castilla y León,d,PP,100
+49,0,3,8,Zamora,Castilla y León,d,PP,100
+8,0,3,9,Barcelona,Cataluña,i,PSC-PSOE,100
+17,0,3,9,Girona,Cataluña,i,PSC-PSOE,100
+25,0,3,9,Lleida,Cataluña,o,PSC (PSC-PSOE),100
+43,0,3,9,Tarragona,Cataluña,i,PSC-PSOE,100
+6,0,3,10,Badajoz,Extremadura,i,PSOE,100
+10,0,3,10,Cáceres,Extremadura,i,PSOE,100
+15,0,3,11,A Coruña,Galicia,d,PP,99.92
+27,0,3,11,Lugo,Galicia,d,PP,100
+32,0,3,11,Ourense,Galicia,d,PP,100
+36,0,3,11,Pontevedra,Galicia,d,PP,100
+28,0,3,12,Madrid,Madrid,d,PP,100
+31,0,3,13,Navarra,Navarra,o,UPN-PP,100
+1,0,3,14,Alava,País Vasco,i,PSE-EE (PSOE),100
+20,0,3,14,Guipúzcoa,País Vasco,i,PSE-EE (PSOE),100
+48,0,3,14,Vizcaya,País Vasco,i,PSE-EE (PSOE),100
+30,0,3,15,Murcia,Murcia,d,PP,100
+26,0,3,16,La Rioja,La Rioja,d,PP,100
+3,0,3,17,Alicante / Alacant,C. Valenciana,d,PP,100
+12,0,3,17,Castellón / Castelló,C. Valenciana,d,PP,100
+46,0,3,17,Valencia / València,C. Valenciana,d,PP,100
+51,0,3,18,Ceuta,Ceuta,d,PP,100
+52,0,3,19,Melilla,Melilla,d,PP,100

@@ -1,0 +1,110 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+  <title>Using CartoDB with Google Maps v3</title>
+  <link href="http://code.google.com/apis/maps/documentation/javascript/examples/default.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="http://vizzuality.github.com/cartodb-gmapsv3/cartodb.css">
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+  <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+  <script type="text/javascript" src="http://vizzuality.github.com/cartodb-gmapsv3/wax.g.js"></script>
+  <script type="text/javascript" src="http://vizzuality.github.com/cartodb-gmapsv3/cartodb-gmapsv3.js"></script>
+  <script type="text/javascript" src="http://use.typekit.com/gvc4hmx.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+  <link rel="stylesheet" type="text/css" href="reset.css" />
+  <link rel="stylesheet" type="text/css" href="style.css" />
+
+  <script type="text/javascript">
+
+
+
+  function initialize() {
+    map = new google.maps.Map(document.getElementById('map_canvas'), {
+      center: new google.maps.LatLng(40.313043,-3.691406),
+      zoom: 7,
+      mapTypeId: google.maps.MapTypeId.ROADMAP,
+      zoomControl: false,
+      panControl: false,
+      streetViewControl:false,
+      mapTypeControl: false,
+      styles: [
+                {
+                  stylers: [
+                    { visibility: "off" },
+                    { lightness: 100 }
+                  ]
+                }
+              ]
+
+    });
+
+      var cartodb_pas = new google.maps.CartoDBLayer({
+      map_canvas: 'map_canvas',
+      map: map,
+      user_name:'vizzuality',
+      table_name: 'esp_adm',
+      query: "SELECT esp_adm.the_geom, esp_adm.the_geom_webmercator, elecciones2008.upo_codigo_color FROM elecciones2008 INNER JOIN esp_adm ON (elecciones2008.upo_nombre = esp_adm.name_2)",
+      map_style: false,
+      infowindow: true,
+      auto_bound: false,
+    });
+
+
+  }
+  </script>
+</head>
+<body onload="initialize()">
+
+  <div class="overlay left">
+
+    <div class="title">
+      <h1 class="tk-adelle">Cómo se vota en España</h1>
+    </div>
+
+    <div class="numbers_container">
+      <ul>
+        <li>
+          <div class="number red">
+            <span class="big">41</span>
+            <span class="name">PP</span>        
+          </div>
+        </li>
+        <li>
+          <div class="number blue">
+            <span class="big">9</span>
+            <span class="name">PSOE</span>        
+          </div>
+        </li>
+        <li>
+        <div class="number green">
+          <span class="big">2</span>
+          <span class="name">OTROS</span>        
+        </div>
+        </li>
+      </div>
+    </ul>
+
+    <div class="text">
+      <p>Un simple mapa en el que puedes ver el voto por provincias. Para la creación de la visualización se han utilizado los datos generados por la API de <a href="#">El País</a> y <a href="#">CartoDB</a> para la creación y personalización del mapa.</p>
+    </div>
+
+  </div>
+
+  <div class="overlay right">
+    <ul>
+      <li>
+        <a href="#">2008</a>
+      </li>
+      <li>
+        <a href="#">2012</a>
+      </li>
+    </ul>
+  </div>
+
+  <div id="map_canvas"></div>
+</body>
+</html>

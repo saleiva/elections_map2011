@@ -1,0 +1,23 @@
+#esp_adm{
+   line-opacity:1;
+   line-color:#FFFFFF;
+   polygon-opacity:0.7;   
+   [upo_codigo_color='d']{
+   	polygon-fill:#a0cdeb;
+  }
+   [upo_codigo_color='i']{
+   	polygon-fill:#e28686; 
+  }
+     [upo_codigo_color='o']{
+   	polygon-fill:#9dc89b;
+  }
+   }
+
+
+
+
+{
+  $c: $upo_codigo_color == 'd' ? '#a0cdeb' : '#123456';
+  polygon-fill: $c;
+  line-color: #FFF;
+}
