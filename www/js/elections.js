@@ -2,13 +2,11 @@
 function getPartiesStats(q,i){
 
 	if(i<3){
-		console.log(i);
 		$.ajax({
 			method:'get',
 		    url: 'http://vizzuality.cartodb.com/api/v1/sql/?q='+ escape(q[i]),
 		    dataType: 'jsonp',
 		    success: function(result) {
-		    	console.log(result.rows[0].count);
 		    	$('.n'+i+' span.big').text(result.rows[0].count);
 		    	getPartiesStats(q,i+1);
 		    }
