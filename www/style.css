@@ -102,16 +102,21 @@
 }
 
 .overlay.right ul li a{
-	background: url('images/button.png') 0 0 no-repeat;
+	background: url('images/button.png') 0 -52px no-repeat;
 	padding: 17px 38px 12px 38px;
 	font-family: Helvetica, Arial, sans-serif;
 	font-size: 15px;
-	color: #FFF;
+	color: #333;
 	font-weight: bold;
 	text-decoration: none;
 }
 
 .overlay.right ul li a:hover{
-	background: url('images/button.png') 0 -52px no-repeat;
-	color: #000;	
+	background: url('images/button.png') 0 0 no-repeat;
+	color: #FFF;	
+}
+
+.overlay.right ul li a.selected{
+	background: url('images/button.png') 0 0 no-repeat;
+	color: #FFF;
 }

@@ -1,6 +1,5 @@
 
 function getPartiesStats(q,i){
-
 	if(i<3){
 		$.ajax({
 			method:'get',
@@ -14,8 +13,18 @@ function getPartiesStats(q,i){
 	}
 }
 
+function selectButton(){
+	$('.overlay.right ul li a').removeClass('selected');
+	$(this).addClass('selected');
+
+	//TODO:
+	//Change map tiles
+}
+
 
 $(document).ready(function() {
+
+	$('.overlay.right ul li a').click('click', selectButton);
 
 	var queries = ["SELECT count(*) FROM elecciones2008 WHERE (upo_nombre_partido='PP')",
   	"SELECT count(*) FROM elecciones2008 WHERE (upo_nombre_partido='PSOE')",
