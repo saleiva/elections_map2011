@@ -12,7 +12,8 @@
   <script type="text/javascript" src="js/elections.js"></script>
   <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
   <script type="text/javascript" src="http://vizzuality.github.com/cartodb-gmapsv3/wax.g.js"></script>
-  <script type="text/javascript" src="http://vizzuality.github.com/cartodb-gmapsv3/cartodb-gmapsv3.js"></script>
+  <!--<script type="text/javascript" src="http://vizzuality.github.com/cartodb-gmapsv3/cartodb-gmapsv3.js"></script>-->
+  <script type="text/javascript" src="js/cartodb-gmapsv3.js"></script>
   <script type="text/javascript" src="http://use.typekit.com/gvc4hmx.js"></script>
   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
@@ -24,6 +25,7 @@
 
 
   function initialize() {
+
     map = new google.maps.Map(document.getElementById('map_canvas'), {
       center: new google.maps.LatLng(40.313043,-3.691406),
       zoom: 7,
@@ -32,6 +34,8 @@
       panControl: false,
       streetViewControl:false,
       mapTypeControl: false,
+      minZoom: 7,
+      maxZoom: 8,
       styles: [
                 {
                   stylers: [
@@ -42,15 +46,15 @@
               ]
     });
 
-      var cartodb_pas = new google.maps.CartoDBLayer({
+      cartodb_layer = new google.maps.CartoDBLayer({
       map_canvas: 'map_canvas',
       map: map,
       user_name:'vizzuality',
       table_name: 'esp_adm',
-      query: "SELECT esp_adm.the_geom, esp_adm.the_geom_webmercator, elecciones2008.upo_codigo_color FROM elecciones2008 INNER JOIN esp_adm ON (elecciones2008.upo_nombre = esp_adm.name_2)",
+      query: generateQueries(year)[3],
       map_style: false,
       infowindow: true,
-      auto_bound: false,
+      auto_bound: false
     });
 
 
@@ -100,7 +104,7 @@
         <a href="#">2012</a>
       </li>
       <li>
-        <a href="#">2008</a>
+        <a class="selected" href="#">2008</a>
       </li>
     </ul>
   </div>
