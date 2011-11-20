@@ -1,5 +1,5 @@
 
-var year = 2008;
+var year = 2011;
 var cartodb_layer;
 
 function getPartiesStats(q,i){
