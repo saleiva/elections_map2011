@@ -40,6 +40,8 @@ function selectButton(){
 }
 
 
+
+
 $(document).ready(function() {
 	$('.overlay.right ul li a').click('click', selectButton);
   	getPartiesStats(generateQueries(year),0);
