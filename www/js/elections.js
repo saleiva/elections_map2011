@@ -25,9 +25,9 @@ function getPartiesStats(q,i){
 }
 
 function generateQueries(y){
-	return ["SELECT count(*) FROM elecciones"+y+" WHERE (upo_nombre_partido='PP')",
-  	"SELECT count(*) FROM elecciones"+y+" WHERE (upo_nombre_partido='PSOE')",
-	"SELECT count(*) FROM elecciones"+y+" WHERE (upo_nombre_partido!='PP' and upo_nombre_partido!='PSOE')",
+	return ["SELECT count(*) FROM elecciones"+y+" WHERE (upo_nombre_partido LIKE '%PP%')",
+  	"SELECT count(*) FROM elecciones"+y+" WHERE (upo_nombre_partido LIKE '%PSOE%')",
+	"SELECT count(*) FROM elecciones"+y+" WHERE (upo_nombre_partido NOT LIKE '%PP%' and upo_nombre_partido NOT LIKE '%PSOE%')",
 	"SELECT esp_adm.the_geom, esp_adm.the_geom_webmercator, elecciones"+ y +".upo_codigo_color FROM elecciones"+y+" INNER JOIN esp_adm ON (elecciones"+y+".upo_nombre = esp_adm.name_2)"];
 }
 
